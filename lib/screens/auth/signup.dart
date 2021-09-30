@@ -168,10 +168,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Icon(
-                  Icons.arrow_back,
-                  size: 40,
-                  color: Colors.black,
+                IconButton(
+                  padding: EdgeInsets.all(0.0),
+                  onPressed: () => Navigator.pop(context),
+                  icon: Icon(
+                    Icons.arrow_back,
+                    size: 40,
+                    color: Colors.black,
+                  ),
                 ),
                 SizedBox(height: 25),
                 Text(
@@ -200,34 +204,39 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     _buildPasswordField(),
                   ],
                 ),
-                SizedBox(height: 10),
-                SubmitButton(
-                  text: 'Sign up',
-                  onPressed: () {
-                    print(_name);
-                    print(_password);
-                    print(_email);
-                    Navigator.pushNamed(context, '/home');
-                  },
+                SizedBox(height: 30),
+                Center(
+                  child: SubmitButton(
+                    text: 'Sign up',
+                    onPressed: () {
+                      print(_name);
+                      print(_password);
+                      print(_email);
+                      Navigator.pushNamed(context, '/home');
+                    },
+                  ),
                 ),
                 Spacer(),
-                RichText(
-                  text: TextSpan(
-                    text: 'By signing in, I agree with ',
-                    style: TextStyle(
-                      color: Colors.grey,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 15.0,
-                    ),
-                    children: <TextSpan>[
-                      TextSpan(
-                        text: 'Terms of Use and Privacy Policy',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
+                Center(
+                  child: RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      text: 'By signing in, I agree with ',
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 15.0,
                       ),
-                    ],
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: '\nTerms of Use and Privacy Policy',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(height: 40),

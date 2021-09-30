@@ -38,12 +38,14 @@ class WelcomeScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.black,
                     gradient: LinearGradient(
+                      // tileMode: TileMode.repeated,
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.white38,
+                        Colors.white.withOpacity(0.6),
                         Colors.black,
                       ],
+                      stops: [0.2, 0.4],
                     ),
                   ),
                 ),

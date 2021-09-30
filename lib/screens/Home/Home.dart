@@ -36,11 +36,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomAppBar(
-        color: Colors.blueGrey,
+        color: Colors.white,
+        elevation: 0,
         shape: CircularNotchedRectangle(),
         notchMargin: 12,
         child: Container(
-          height: 60,
+          height: 70,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: Row(
@@ -52,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     IconButton(
                       icon: Icon(Icons.home),
-                      color: currentState == 0 ? Colors.black : Colors.white54,
+                      color: currentState == 0 ? Colors.black : Colors.grey,
                       onPressed: () {
                         setState(() {
                           currentState = 0;
@@ -60,8 +61,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       iconSize: 30,
                     ),
-                    Text('Home',
-                        style: TextStyle(color: Colors.grey, fontSize: 25)),
+                    Text(
+                      'Home',
+                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                    ),
                   ],
                 ),
                 Column(
@@ -70,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     IconButton(
                       icon: Icon(Icons.person),
-                      color: currentState == 1 ? Colors.black : Colors.white54,
+                      color: currentState == 1 ? Colors.black : Colors.grey,
                       onPressed: () {
                         setState(() {
                           currentState = 1;
@@ -78,8 +81,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       iconSize: 30,
                     ),
-                    Text('Moments',
-                        style: TextStyle(color: Colors.grey, fontSize: 25)),
+                    Text(
+                      'Moments',
+                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                    ),
                   ],
                 ),
                 Column(
@@ -87,8 +92,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     IconButton(
+                      padding: EdgeInsets.all(0.0),
                       icon: Icon(Icons.home),
-                      color: currentState == 2 ? Colors.black : Colors.white54,
+                      color: currentState == 2 ? Colors.black : Colors.grey,
                       onPressed: () {
                         setState(() {
                           currentState = 2;
@@ -96,8 +102,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       iconSize: 30,
                     ),
-                    Text('Chat',
-                        style: TextStyle(color: Colors.grey, fontSize: 25)),
+                    Text(
+                      'Chat',
+                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                    ),
                   ],
                 ),
                 Column(
@@ -105,8 +113,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     IconButton(
+                      padding: EdgeInsets.all(0.0),
                       icon: Icon(Icons.person),
-                      color: currentState == 3 ? Colors.black : Colors.white54,
+                      color: currentState == 3 ? Colors.black : Colors.grey,
                       onPressed: () {
                         setState(() {
                           currentState = 3;
@@ -114,8 +123,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                       iconSize: 30,
                     ),
-                    Text('Profile',
-                        style: TextStyle(color: Colors.grey, fontSize: 25)),
+                    Text(
+                      'Profile',
+                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                    ),
                   ],
                 ),
               ],
