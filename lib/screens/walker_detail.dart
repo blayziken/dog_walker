@@ -2,11 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:test_app/widgets/buttons.dart';
 
 class WalkerDetailScreen extends StatelessWidget {
+  static const routeName = '/walker-detail';
+
   final String name;
   final String rate;
   final String image;
 
-  const WalkerDetailScreen({Key? key, required this.name, required this.rate, required this.image}) : super(key: key);
+  const WalkerDetailScreen({
+    Key? key,
+    this.name = "",
+    this.rate = "",
+    this.image = "",
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

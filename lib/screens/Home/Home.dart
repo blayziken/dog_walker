@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'HomeBody.dart';
 
@@ -18,20 +19,6 @@ class _HomeScreenState extends State<HomeScreen> {
     ProfileBody(),
   ];
 
-  //
-  //
-
-  // var data = json.decode(await getJson());
-
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
-  //   Future<String> getJson() {
-  //     return rootBundle.loadString('data.json');
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Container(
           height: 70,
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            padding: EdgeInsets.symmetric(horizontal: 30.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -52,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     IconButton(
+                      padding: EdgeInsets.all(0.0),
                       icon: Icon(Icons.home),
                       color: currentState == 0 ? Colors.black : Colors.grey,
                       onPressed: () {
@@ -59,11 +47,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           currentState = 0;
                         });
                       },
-                      iconSize: 30,
+                      iconSize: 40,
                     ),
                     Text(
                       'Home',
-                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                      style: TextStyle(
+                        color: currentState == 0 ? Colors.black : Colors.grey,
+                        fontSize: 15,
+                        fontWeight: currentState == 0 ? FontWeight.w900 : FontWeight.w700,
+                      ),
                     ),
                   ],
                 ),
@@ -72,6 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     IconButton(
+                      padding: EdgeInsets.all(0.0),
                       icon: Icon(Icons.person),
                       color: currentState == 1 ? Colors.black : Colors.grey,
                       onPressed: () {
@@ -79,11 +72,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           currentState = 1;
                         });
                       },
-                      iconSize: 30,
+                      iconSize: 40,
                     ),
                     Text(
                       'Moments',
-                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                      style: TextStyle(
+                        color: currentState == 1 ? Colors.black : Colors.grey,
+                        fontSize: 15,
+                        fontWeight: currentState == 1 ? FontWeight.w900 : FontWeight.w700,
+                      ),
                     ),
                   ],
                 ),
@@ -100,11 +97,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           currentState = 2;
                         });
                       },
-                      iconSize: 30,
+                      iconSize: 40,
                     ),
                     Text(
                       'Chat',
-                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                      style: TextStyle(
+                        color: currentState == 2 ? Colors.black : Colors.grey,
+                        fontSize: 15,
+                        fontWeight: currentState == 2 ? FontWeight.w900 : FontWeight.w700,
+                      ),
                     ),
                   ],
                 ),
@@ -121,11 +122,15 @@ class _HomeScreenState extends State<HomeScreen> {
                           currentState = 3;
                         });
                       },
-                      iconSize: 30,
+                      iconSize: 40,
                     ),
                     Text(
                       'Profile',
-                      style: TextStyle(color: Colors.grey, fontSize: 20),
+                      style: TextStyle(
+                        color: currentState == 3 ? Colors.black : Colors.grey,
+                        fontSize: 15,
+                        fontWeight: currentState == 3 ? FontWeight.w900 : FontWeight.w700,
+                      ),
                     ),
                   ],
                 ),

@@ -179,13 +179,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 SizedBox(height: 25),
                 Text(
-                  'Let\s start here',
+                  'Let\'s start here',
                   style: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w900,
                     fontSize: 50,
                   ),
                 ),
+                SizedBox(height: 5),
                 Text(
                   'Fill in your details to begin',
                   style: TextStyle(

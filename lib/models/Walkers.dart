@@ -27,13 +27,40 @@ List<DogWalker> walkers = [
   ),
   DogWalker(
     name: "Tolu Femi",
-    image: "assets/images/IMAGE77.png",
+    image: "assets/images/Frame3575.png",
     location: "22 km from you",
     rate: "5/h",
   ),
   DogWalker(
     name: "Greene York",
     image: "assets/images/6-mega-y.png",
+    location: "10 km from you",
+    rate: "4/h",
+  ),
+];
+
+List<DogWalker> suggestedWalkers = [
+  DogWalker(
+    name: "Mark Greene",
+    image: "assets/images/Frame33546.png",
+    location: "2 km from you",
+    rate: "5/h",
+  ),
+  DogWalker(
+    name: "Trina Kain",
+    image: "assets/images/Frame33553.png",
+    location: "4 km from you",
+    rate: "4/h",
+  ),
+  DogWalker(
+    name: "Jermaine Cole",
+    image: "assets/images/Frame3575.png",
+    location: "22 km from you",
+    rate: "5/h",
+  ),
+  DogWalker(
+    name: "David Blake",
+    image: "assets/images/Frame33546.png",
     location: "10 km from you",
     rate: "4/h",
   ),

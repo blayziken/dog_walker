@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/screens/Home/Home.dart';
 import 'package:test_app/screens/auth/signup.dart';
-import 'package:test_app/screens/test_s.dart';
+import 'package:test_app/screens/walker_detail.dart';
 import 'package:test_app/screens/welcome.dart';
 
 void main() {
@@ -11,11 +11,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         SignUpScreen.routeName: (context) => SignUpScreen(),
         HomeScreen.routeName: (context) => HomeScreen(),
+        WalkerDetailScreen.routeName: (context) => WalkerDetailScreen(),
       },
     );
   }
