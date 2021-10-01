@@ -26,7 +26,7 @@ class SubmitButton extends StatelessWidget {
             end: Alignment.centerRight,
             colors: [
               Colors.orange,
-              Color(0xffb72ac),
+              Colors.deepOrangeAccent,
             ],
           ),
         ),

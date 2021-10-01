@@ -19,12 +19,12 @@ class WelcomeScreen extends StatelessWidget {
               Positioned(
                 top: 0,
                 child: Container(
-                  height: media.height * 0.7,
+                  height: media.height * 0.75,
                   width: media.width,
                   decoration: BoxDecoration(
                     color: Colors.green,
                     image: DecorationImage(
-                      image: AssetImage('assets/onboard.png'),
+                      image: AssetImage('assets/images/onboarding_image.png'),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -33,48 +33,38 @@ class WelcomeScreen extends StatelessWidget {
               Positioned(
                 bottom: 0,
                 child: Container(
-                  height: media.height * 0.4,
+                  height: media.height * 0.27,
                   width: media.width,
                   decoration: BoxDecoration(
-                    color: Colors.black,
-                    gradient: LinearGradient(
-                      // tileMode: TileMode.repeated,
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.white.withOpacity(0.6),
-                        Colors.black,
-                      ],
-                      stops: [0.2, 0.4],
-                    ),
+                    color: Colors.black.withOpacity(0.967),
                   ),
                 ),
               ),
               Positioned(
                 top: 0,
                 child: Padding(
-                  padding: EdgeInsets.all(15.0),
+                  padding: EdgeInsets.all(35.0),
                   child: Container(
                     child: Row(
                       children: [
                         Container(
-                          height: 80,
-                          width: 80,
+                          height: 60,
+                          width: 60,
                           decoration: BoxDecoration(
                             color: Colors.red,
                             image: DecorationImage(
-                              image: AssetImage('assets/onboard.png'),
+                              image: AssetImage('assets/images/logo_s.png'),
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 5,
                         ),
                         Text(
                           'WOO\nDOG',
                           style: TextStyle(
-                            fontSize: 45,
+                            fontSize: 35,
                             color: Colors.red,
                             fontWeight: FontWeight.w900,
                           ),
@@ -86,7 +76,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: media.height / 1.8,
+                top: media.height / 1.65,
                 left: media.width / 3.4,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -135,8 +125,8 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: media.height / 1.6,
-                left: media.width / 12,
+                top: media.height / 1.49,
+                left: media.width / 10,
                 child: Column(
                   children: [
                     Text(
@@ -144,30 +134,32 @@ class WelcomeScreen extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 40,
+                        fontWeight: FontWeight.w900,
                       ),
                       textAlign: TextAlign.center,
                     ),
-                    SizedBox(height: 40),
+                    SizedBox(height: 30),
                     SubmitButton(
                       text: 'Join our community',
                       onPressed: () {
                         Navigator.pushNamed(context, '/sign-up');
                       },
                     ),
-                    SizedBox(height: 60),
+                    SizedBox(height: 30),
                     RichText(
                       text: TextSpan(
                         text: 'Already a member?',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 20.0,
+                          fontSize: 15.0,
+                          letterSpacing: 1,
                         ),
                         children: <TextSpan>[
                           TextSpan(
                             text: ' Sign in',
                             style: TextStyle(
-                              color: Colors.orange,
-                              fontWeight: FontWeight.w800,
+                              color: Colors.deepOrangeAccent,
+                              fontWeight: FontWeight.w900,
                             ),
                           ),
                         ],

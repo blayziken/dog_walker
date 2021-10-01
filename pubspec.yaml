@@ -25,4 +25,4 @@ flutter:
 
   assets:
     - data.json
-    - assets/
+    - assets/images/
