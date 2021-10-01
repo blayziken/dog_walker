@@ -26,7 +26,7 @@ List<DogWalker> walkers = [
     rate: "3/h",
   ),
   DogWalker(
-    name: "Tolu Femi",
+    name: "Alex Murray",
     image: "assets/images/Frame3575.png",
     location: "22 km from you",
     rate: "5/h",

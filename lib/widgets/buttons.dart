@@ -17,7 +17,7 @@ class SubmitButton extends StatelessWidget {
     return InkWell(
       child: Container(
         height: 75,
-        width: media.width * 0.8,
+        width: media.width * 0.9,
         decoration: BoxDecoration(
           color: Colors.orangeAccent,
           borderRadius: BorderRadius.circular(15),
@@ -35,7 +35,7 @@ class SubmitButton extends StatelessWidget {
             text,
             style: TextStyle(
               color: Colors.white,
-              fontSize: 35,
+              fontSize: 30,
             ),
           ),
         ),

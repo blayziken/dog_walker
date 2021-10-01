@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:test_app/models/Walkers.dart';
 
+import '../walker_detail.dart';
+
 class HomeBody extends StatefulWidget {
   const HomeBody({Key? key}) : super(key: key);
   @override
@@ -141,7 +143,18 @@ class _HomeBodyState extends State<HomeBody> {
                                   borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => WalkerDetailScreen(
+                                      image: walkers[index].image,
+                                      name: walkers[index].name,
+                                      rate: walkers[index].rate,
+                                    ),
+                                  ),
+                                );
+                              },
                             ),
                           ),
                           SizedBox(height: 10),
