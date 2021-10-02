@@ -41,7 +41,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 child: Padding(
                   padding: const EdgeInsets.only(left: 10, right: 10.0),
                   child: Container(
-                    color: Colors.teal,
+                    // color: Colors.teal,
                     height: 800,
                     width: media.width,
                     child: ListView.separated(

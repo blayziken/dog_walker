@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:test_app/screens/chat_screens/chats.dart';
 import 'HomeBody.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> widgets = [
     HomeBody(),
     MomentsBody(),
-    ChatBody(),
+    Chats(),
     ProfileBody(),
   ];
 
@@ -144,17 +145,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class ChatBody extends StatelessWidget {
-  const ChatBody({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: Colors.red,
-    );
-  }
-}
-
 class MomentsBody extends StatelessWidget {
   const MomentsBody({Key? key}) : super(key: key);
 
@@ -162,6 +152,12 @@ class MomentsBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.yellow,
+      child: Center(
+        child: Text(
+          'Moments',
+          style: TextStyle(fontSize: 50, fontWeight: FontWeight.w900),
+        ),
+      ),
     );
   }
 }
@@ -173,6 +169,12 @@ class ProfileBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.brown,
+      child: Center(
+        child: Text(
+          'Profile',
+          style: TextStyle(fontSize: 50, fontWeight: FontWeight.w900),
+        ),
+      ),
     );
   }
 }
