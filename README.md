@@ -1,6 +1,7 @@
 # Dog Walker
 
-https://user-images.githubusercontent.com/34488661/135732323-982c4ac4-caa7-463d-bd4c-b7c9f20b791e.mp4
+
+![gif](https://user-images.githubusercontent.com/34488661/135732555-d0d9ec3a-e9a7-42dd-8bc7-059fccc6eea0.gif)
 
 UI implementation for Flutter test
 
