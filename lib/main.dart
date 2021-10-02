@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/screens/Home/Home.dart';
 import 'package:test_app/screens/auth/signup.dart';
-import 'package:test_app/screens/chat_screen.dart';
+import 'package:test_app/screens/chat_messages.dart';
 import 'package:test_app/screens/walker_detail.dart';
 import 'package:test_app/screens/welcome.dart';
 
