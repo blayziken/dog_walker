@@ -12,6 +12,7 @@ class WelcomeScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Stack(
+          alignment: Alignment.center,
           children: [
             Positioned(
               top: 0,
@@ -39,6 +40,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Positioned(
               top: 0,
+              left: 0,
               child: Padding(
                 padding: EdgeInsets.only(top: 50.0, left: 40.0),
                 child: Container(
@@ -73,8 +75,8 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: media.height / 1.48,
-              left: media.width / 3.4,
+              top: media.height / 1.53,
+              // left: media.width / 3.4,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -122,47 +124,52 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             Positioned(
-              top: media.height / 1.38,
-              left: media.width / 10,
-              child: Column(
-                children: [
-                  Text(
-                    'Too tired to walk your dog?\nLet\'s help you!',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 40,
-                      fontWeight: FontWeight.w900,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  SizedBox(height: 30),
-                  SubmitButton(
-                    text: 'Join our community',
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/sign-up');
-                    },
-                  ),
-                  SizedBox(height: 30),
-                  RichText(
-                    text: TextSpan(
-                      text: 'Already a member?',
+              top: media.height / 1.42,
+              // left: media.width / 10,
+              // left: 0,
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Too tired to walk your dog?\nLet\'s help you!',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15.0,
-                        letterSpacing: 1,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w900,
                       ),
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: ' Sign in',
-                          style: TextStyle(
-                            color: Colors.deepOrangeAccent,
-                            fontWeight: FontWeight.w900,
-                          ),
-                        ),
-                      ],
+                      textAlign: TextAlign.center,
                     ),
-                  ),
-                ],
+                    SizedBox(height: 30),
+                    SubmitButton(
+                      text: 'Join our community',
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/sign-up');
+                      },
+                    ),
+                    SizedBox(height: 30),
+                    RichText(
+                      text: TextSpan(
+                        text: 'Already a member?',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 15.0,
+                          letterSpacing: 1,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: ' Sign in',
+                            style: TextStyle(
+                              color: Colors.deepOrangeAccent,
+                              fontWeight: FontWeight.w900,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
