@@ -1,6 +1,6 @@
-# test_app
+# Dog Walker
 
-A new Flutter project.
+UI implementation for Flutter test
 
 ## Getting Started
 
