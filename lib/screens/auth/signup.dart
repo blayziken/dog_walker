@@ -159,11 +159,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
     return SafeArea(
       child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.only(top: 50.0, left: 20, right: 20),
-          child: Container(
-            height: media.height,
-            width: double.infinity,
+        body: Container(
+          height: media.height * 0.95,
+          width: double.infinity,
+          // color: Colors.red,
+          child: Padding(
+            padding: EdgeInsets.only(top: 30.0, left: 20, right: 20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,

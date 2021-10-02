@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       home: WelcomeScreen(),
       routes: {
-        SignUpScreen.routeName: (context) => SignUpScreen(),
+          SignUpScreen.routeName: (context) => SignUpScreen(),
         HomeScreen.routeName: (context) => HomeScreen(),
         WalkerDetailScreen.routeName: (context) => WalkerDetailScreen(),
         ChatScreen.routeName: (context) => ChatScreen(),
